@@ -16,6 +16,11 @@
 		47DAC8372A29E26100519AD7 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DAC8362A29E26100519AD7 /* SidebarView.swift */; };
 		47DAC8392A29E26F00519AD7 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DAC8382A29E26F00519AD7 /* DetailView.swift */; };
 		47DAC83B2A29E3B600519AD7 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DAC83A2A29E3B600519AD7 /* Filter.swift */; };
+		47DAC83D2A29F3F900519AD7 /* Issue-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DAC83C2A29F3F900519AD7 /* Issue-CoreDataHelpers.swift */; };
+		47DAC83F2A29F7EC00519AD7 /* Tag-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DAC83E2A29F7EC00519AD7 /* Tag-CoreDataHelpers.swift */; };
+		47DAC8452A2A1CCF00519AD7 /* IssueRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DAC8442A2A1CCF00519AD7 /* IssueRow.swift */; };
+		47DAC8472A2A2F2900519AD7 /* IssueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DAC8462A2A2F2900519AD7 /* IssueView.swift */; };
+		47DAC8492A2A2F3C00519AD7 /* NoIssueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DAC8482A2A2F3C00519AD7 /* NoIssueView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +36,11 @@
 		47DAC8362A29E26100519AD7 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
 		47DAC8382A29E26F00519AD7 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		47DAC83A2A29E3B600519AD7 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		47DAC83C2A29F3F900519AD7 /* Issue-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Issue-CoreDataHelpers.swift"; sourceTree = "<group>"; };
+		47DAC83E2A29F7EC00519AD7 /* Tag-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tag-CoreDataHelpers.swift"; sourceTree = "<group>"; };
+		47DAC8442A2A1CCF00519AD7 /* IssueRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueRow.swift; sourceTree = "<group>"; };
+		47DAC8462A2A2F2900519AD7 /* IssueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueView.swift; sourceTree = "<group>"; };
+		47DAC8482A2A2F3C00519AD7 /* NoIssueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoIssueView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,10 +77,15 @@
 				47DAC8212A28879E00519AD7 /* SwiftUIUltimatePortfolioApp.swift */,
 				47DAC83A2A29E3B600519AD7 /* Filter.swift */,
 				47DAC8232A28879E00519AD7 /* ContentView.swift */,
+				47DAC8442A2A1CCF00519AD7 /* IssueRow.swift */,
 				47DAC8362A29E26100519AD7 /* SidebarView.swift */,
+				47DAC83C2A29F3F900519AD7 /* Issue-CoreDataHelpers.swift */,
+				47DAC83E2A29F7EC00519AD7 /* Tag-CoreDataHelpers.swift */,
 				47DAC8382A29E26F00519AD7 /* DetailView.swift */,
 				47DAC8302A2888E100519AD7 /* Main.xcdatamodeld */,
 				47DAC8332A288DAD00519AD7 /* DataController.swift */,
+				47DAC8462A2A2F2900519AD7 /* IssueView.swift */,
+				47DAC8482A2A2F3C00519AD7 /* NoIssueView.swift */,
 				47DAC8252A2887A400519AD7 /* Assets.xcassets */,
 				47DAC8272A2887A400519AD7 /* SwiftUIUltimatePortfolio.entitlements */,
 				47DAC8282A2887A400519AD7 /* Preview Content */,
@@ -157,11 +172,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				47DAC83B2A29E3B600519AD7 /* Filter.swift in Sources */,
+				47DAC83F2A29F7EC00519AD7 /* Tag-CoreDataHelpers.swift in Sources */,
 				47DAC8322A2888E200519AD7 /* Main.xcdatamodeld in Sources */,
+				47DAC83D2A29F3F900519AD7 /* Issue-CoreDataHelpers.swift in Sources */,
 				47DAC8392A29E26F00519AD7 /* DetailView.swift in Sources */,
 				47DAC8342A288DAD00519AD7 /* DataController.swift in Sources */,
 				47DAC8372A29E26100519AD7 /* SidebarView.swift in Sources */,
 				47DAC8242A28879E00519AD7 /* ContentView.swift in Sources */,
+				47DAC8472A2A2F2900519AD7 /* IssueView.swift in Sources */,
+				47DAC8492A2A2F3C00519AD7 /* NoIssueView.swift in Sources */,
+				47DAC8452A2A1CCF00519AD7 /* IssueRow.swift in Sources */,
 				47DAC8222A28879E00519AD7 /* SwiftUIUltimatePortfolioApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
