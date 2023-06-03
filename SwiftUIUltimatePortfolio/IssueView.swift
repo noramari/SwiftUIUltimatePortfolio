@@ -72,6 +72,10 @@ struct IssueView: View {
             }
         }
         .disabled(issue.isDeleted)
+        //@Published internally calls the objectWillChange publisher that comes built into any class that conforms to ObservableObject. So, we can use onReceive() to watch that for announcements, and call queueSave() whenever a change notification comes in.
+        .onReceive(issue.objectWillChange) { _ in
+            dataController.queueSave()
+        }
     }
 }
 
