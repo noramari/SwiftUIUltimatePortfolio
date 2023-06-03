@@ -17,6 +17,8 @@ struct SidebarView: View {
     @State private var renamingTag = false
     @State private var tagName = ""
     
+    @State private var showingAwards = false
+    
     var tagFilters: [Filter] {
         tags.map { tag in
             Filter(id: tag.tagID, name: tag.tagName, icon: "tag", tag: tag)
@@ -44,7 +46,6 @@ struct SidebarView: View {
                                 } label: {
                                     Label("Rename", systemImage: "pencil")
                                 }
-
                             }
                     }
                 }
@@ -52,24 +53,31 @@ struct SidebarView: View {
             }
         }
         .toolbar {
-            #if DEBUG
+//            #if DEBUG
+//            Button {
+//                dataController.deleteAll()
+//                dataController.createSampleData()
+//            } label: {
+//                Label("ADD SAMPLES", systemImage: "flame")
+//            }
+//            #endif
+            
             Button {
-                dataController.deleteAll()
-                dataController.createSampleData()
+                showingAwards.toggle()
             } label: {
-                Label("ADD SAMPLES", systemImage: "flame")
+                Label("Show awards", systemImage: "rosette")
             }
-            #endif
             
             Button(action: dataController.newTag) {
                 Label("Add tag", systemImage: "plus.circle")
             }
         }
-        .alert("Rename taf", isPresented: $renamingTag) {
-            Button("OK", action: completeRename())
+        .alert("Rename tag", isPresented: $renamingTag) {
+            Button("OK", action: completeRename)
             Button("Cancel", role: .cancel) { }
             TextField("New name", text: $tagName)
         }
+        .sheet(isPresented: $showingAwards, content: AwardsView.init)
     }
     
     func delete(_ offsets: IndexSet) {
