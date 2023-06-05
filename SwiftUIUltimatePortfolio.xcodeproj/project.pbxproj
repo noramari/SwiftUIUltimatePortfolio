@@ -10,6 +10,12 @@
 		47A699D22A2D89A300BD0617 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 47A699D42A2D89A300BD0617 /* Localizable.strings */; };
 		47A699D62A2D8A1600BD0617 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 47A699D82A2D8A1600BD0617 /* Localizable.stringsdict */; };
 		47A699DA2A2D8AD200BD0617 /* Awards.json in Resources */ = {isa = PBXBuildFile; fileRef = 47A699DC2A2D8AD200BD0617 /* Awards.json */; };
+		47A699DF2A2D97D600BD0617 /* SidebarViewToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A699DE2A2D97D600BD0617 /* SidebarViewToolbarView.swift */; };
+		47A699E12A2D99CC00BD0617 /* IssueViewToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A699E02A2D99CC00BD0617 /* IssueViewToolbar.swift */; };
+		47A699E32A2D9C4800BD0617 /* ContentViewToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A699E22A2D9C4800BD0617 /* ContentViewToolbarView.swift */; };
+		47A699E52A2D9DFE00BD0617 /* TagsMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A699E42A2D9DFE00BD0617 /* TagsMenuView.swift */; };
+		47A699E72A2D9EFD00BD0617 /* SmartFilterRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A699E62A2D9EFD00BD0617 /* SmartFilterRow.swift */; };
+		47A699E92A2D9F7600BD0617 /* UserFilterRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A699E82A2D9F7600BD0617 /* UserFilterRow.swift */; };
 		47AD25842A2B1D53005AE6A1 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AD25832A2B1D53005AE6A1 /* Bundle-Decodable.swift */; };
 		47AD25872A2B227A005AE6A1 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47AD25852A2B227A005AE6A1 /* Colors.xcassets */; };
 		47AD258A2A2B2333005AE6A1 /* Award.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AD25892A2B2333005AE6A1 /* Award.swift */; };
@@ -37,6 +43,12 @@
 		47A699D92A2D8A1C00BD0617 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = hu; path = hu.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		47A699DB2A2D8AD200BD0617 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/Awards.json; sourceTree = "<group>"; };
 		47A699DD2A2D8AD600BD0617 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = hu; path = hu.lproj/Awards.json; sourceTree = "<group>"; };
+		47A699DE2A2D97D600BD0617 /* SidebarViewToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewToolbarView.swift; sourceTree = "<group>"; };
+		47A699E02A2D99CC00BD0617 /* IssueViewToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueViewToolbar.swift; sourceTree = "<group>"; };
+		47A699E22A2D9C4800BD0617 /* ContentViewToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewToolbarView.swift; sourceTree = "<group>"; };
+		47A699E42A2D9DFE00BD0617 /* TagsMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsMenuView.swift; sourceTree = "<group>"; };
+		47A699E62A2D9EFD00BD0617 /* SmartFilterRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartFilterRow.swift; sourceTree = "<group>"; };
+		47A699E82A2D9F7600BD0617 /* UserFilterRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFilterRow.swift; sourceTree = "<group>"; };
 		47AD25832A2B1D53005AE6A1 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 		47AD25852A2B227A005AE6A1 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		47AD25892A2B2333005AE6A1 /* Award.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Award.swift; sourceTree = "<group>"; };
@@ -94,8 +106,12 @@
 				47DAC8212A28879E00519AD7 /* SwiftUIUltimatePortfolioApp.swift */,
 				47DAC83A2A29E3B600519AD7 /* Filter.swift */,
 				47DAC8232A28879E00519AD7 /* ContentView.swift */,
+				47A699E22A2D9C4800BD0617 /* ContentViewToolbarView.swift */,
 				47DAC8442A2A1CCF00519AD7 /* IssueRow.swift */,
 				47DAC8362A29E26100519AD7 /* SidebarView.swift */,
+				47A699E82A2D9F7600BD0617 /* UserFilterRow.swift */,
+				47A699E62A2D9EFD00BD0617 /* SmartFilterRow.swift */,
+				47A699DE2A2D97D600BD0617 /* SidebarViewToolbarView.swift */,
 				47AD25832A2B1D53005AE6A1 /* Bundle-Decodable.swift */,
 				47DAC83C2A29F3F900519AD7 /* Issue-CoreDataHelpers.swift */,
 				47DAC83E2A29F7EC00519AD7 /* Tag-CoreDataHelpers.swift */,
@@ -103,6 +119,8 @@
 				47DAC8302A2888E100519AD7 /* Main.xcdatamodeld */,
 				47DAC8332A288DAD00519AD7 /* DataController.swift */,
 				47DAC8462A2A2F2900519AD7 /* IssueView.swift */,
+				47A699E42A2D9DFE00BD0617 /* TagsMenuView.swift */,
+				47A699E02A2D99CC00BD0617 /* IssueViewToolbar.swift */,
 				47DAC8482A2A2F3C00519AD7 /* NoIssueView.swift */,
 				47DAC8252A2887A400519AD7 /* Assets.xcassets */,
 				47AD25852A2B227A005AE6A1 /* Colors.xcassets */,
@@ -201,7 +219,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				47DAC83B2A29E3B600519AD7 /* Filter.swift in Sources */,
+				47A699E52A2D9DFE00BD0617 /* TagsMenuView.swift in Sources */,
 				47AD258C2A2B23ED005AE6A1 /* AwardsView.swift in Sources */,
+				47A699E12A2D99CC00BD0617 /* IssueViewToolbar.swift in Sources */,
+				47A699E72A2D9EFD00BD0617 /* SmartFilterRow.swift in Sources */,
 				47AD258A2A2B2333005AE6A1 /* Award.swift in Sources */,
 				47DAC83F2A29F7EC00519AD7 /* Tag-CoreDataHelpers.swift in Sources */,
 				47DAC8322A2888E200519AD7 /* Main.xcdatamodeld in Sources */,
@@ -210,8 +231,11 @@
 				47DAC8392A29E26F00519AD7 /* DetailView.swift in Sources */,
 				47DAC8342A288DAD00519AD7 /* DataController.swift in Sources */,
 				47DAC8372A29E26100519AD7 /* SidebarView.swift in Sources */,
+				47A699DF2A2D97D600BD0617 /* SidebarViewToolbarView.swift in Sources */,
 				47DAC8242A28879E00519AD7 /* ContentView.swift in Sources */,
+				47A699E32A2D9C4800BD0617 /* ContentViewToolbarView.swift in Sources */,
 				47DAC8472A2A2F2900519AD7 /* IssueView.swift in Sources */,
+				47A699E92A2D9F7600BD0617 /* UserFilterRow.swift in Sources */,
 				47DAC8492A2A2F3C00519AD7 /* NoIssueView.swift in Sources */,
 				47DAC8452A2A1CCF00519AD7 /* IssueRow.swift in Sources */,
 				47DAC8222A28879E00519AD7 /* SwiftUIUltimatePortfolioApp.swift in Sources */,

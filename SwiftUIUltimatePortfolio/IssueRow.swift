@@ -44,7 +44,6 @@ struct IssueRow: View {
             }
         }
         .accessibilityHint(issue.priority == 2 ? "High priority" : "")
-        
     }
 }
 
