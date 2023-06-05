@@ -10,8 +10,8 @@ import SwiftUI
 @main
 struct SwiftUIUltimatePortfolioApp: App {
     @StateObject var dataController = DataController()
-    @Environment(\.scenePhase) var schenePhase
-    
+    @Environment(\.scenePhase) var scenePhase
+
     var body: some Scene {
         WindowGroup {
             NavigationSplitView {
@@ -23,7 +23,7 @@ struct SwiftUIUltimatePortfolioApp: App {
             }
             .environment(\.managedObjectContext, dataController.container.viewContext)
             .environmentObject(dataController)
-            .onChange(of: schenePhase) { phase in
+            .onChange(of: scenePhase) { phase in
                 if phase != .active {
                     dataController.save()
                 }
