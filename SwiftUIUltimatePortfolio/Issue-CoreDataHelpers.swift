@@ -49,6 +49,10 @@ extension Issue {
         }
     }
     
+    var issuesFormattedCreationDate: String {
+        issueCreationDate.formatted(date: .numeric, time: .omitted)
+    }
+    
     // An example item for SwiftUI previewing purposes
     static var example: Issue {
         let controller = DataController(inMemory: true)

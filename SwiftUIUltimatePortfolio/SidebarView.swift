@@ -30,7 +30,7 @@ struct SidebarView: View {
             Section("Smart Filters") {
                 ForEach(smartFilters) { filter in
                     NavigationLink(value: filter) {
-                        Label(filter.name, systemImage: filter.icon)
+                        Label(LocalizedStringKey(filter.name), systemImage: filter.icon)
                     }
                 }
             }
@@ -55,21 +55,21 @@ struct SidebarView: View {
                             }
                             .accessibilityElement()
                             .accessibilityLabel(filter.name)
-                            .accessibilityHint("^[\(filter.activeIssuesCount) issue](inflect: true)")
+                            .accessibilityHint("\(filter.activeIssuesCount) issues")
                     }
                 }
                 .onDelete(perform: delete)
             }
         }
         .toolbar {
-//            #if DEBUG
-//            Button {
-//                dataController.deleteAll()
-//                dataController.createSampleData()
-//            } label: {
-//                Label("ADD SAMPLES", systemImage: "flame")
-//            }
-//            #endif
+            #if DEBUG
+            Button {
+                dataController.deleteAll()
+                dataController.createSampleData()
+            } label: {
+                Label("ADD SAMPLES", systemImage: "flame")
+            }
+            #endif
             
             Button {
                 showingAwards.toggle()
