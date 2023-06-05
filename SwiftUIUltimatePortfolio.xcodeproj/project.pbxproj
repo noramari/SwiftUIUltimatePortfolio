@@ -61,7 +61,7 @@
 		47DAC8292A2887A400519AD7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		47DAC8312A2888E200519AD7 /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
 		47DAC8332A288DAD00519AD7 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
-		47DAC8352A29E11300519AD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		47DAC8352A29E11300519AD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47DAC8362A29E26100519AD7 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
 		47DAC8382A29E26F00519AD7 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		47DAC83A2A29E3B600519AD7 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
@@ -83,6 +83,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47A699EC2A2DC08C00BD0617 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				47AD25892A2B2333005AE6A1 /* Award.swift */,
+				47DAC83A2A29E3B600519AD7 /* Filter.swift */,
+				47DAC83C2A29F3F900519AD7 /* Issue-CoreDataHelpers.swift */,
+				47DAC83E2A29F7EC00519AD7 /* Tag-CoreDataHelpers.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		47A699ED2A2DC09400BD0617 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				47AD258B2A2B23ED005AE6A1 /* AwardsView.swift */,
+				47DAC8232A28879E00519AD7 /* ContentView.swift */,
+				47A699E22A2D9C4800BD0617 /* ContentViewToolbarView.swift */,
+				47DAC8362A29E26100519AD7 /* SidebarView.swift */,
+				47A699DE2A2D97D600BD0617 /* SidebarViewToolbarView.swift */,
+				47A699E82A2D9F7600BD0617 /* UserFilterRow.swift */,
+				47A699E62A2D9EFD00BD0617 /* SmartFilterRow.swift */,
+				47DAC8482A2A2F3C00519AD7 /* NoIssueView.swift */,
+				47DAC8462A2A2F2900519AD7 /* IssueView.swift */,
+				47A699E02A2D99CC00BD0617 /* IssueViewToolbar.swift */,
+				47DAC8442A2A1CCF00519AD7 /* IssueRow.swift */,
+				47DAC8382A29E26F00519AD7 /* DetailView.swift */,
+				47A699E42A2D9DFE00BD0617 /* TagsMenuView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		47A699EE2A2DC09B00BD0617 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				47DAC8332A288DAD00519AD7 /* DataController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		47A699EF2A2DC12D00BD0617 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				47AD25832A2B1D53005AE6A1 /* Bundle-Decodable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		47A699F02A2DC13900BD0617 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				47A699DC2A2D8AD200BD0617 /* Awards.json */,
+				47A699D42A2D89A300BD0617 /* Localizable.strings */,
+				47A699D82A2D8A1600BD0617 /* Localizable.stringsdict */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		47A699F12A2DC14A00BD0617 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				47DAC8352A29E11300519AD7 /* Info.plist */,
+				47DAC8302A2888E100519AD7 /* Main.xcdatamodeld */,
+				47DAC8272A2887A400519AD7 /* SwiftUIUltimatePortfolio.entitlements */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
 		47DAC8152A28879E00519AD7 = {
 			isa = PBXGroup;
 			children = (
@@ -102,34 +169,15 @@
 		47DAC8202A28879E00519AD7 /* SwiftUIUltimatePortfolio */ = {
 			isa = PBXGroup;
 			children = (
-				47DAC8352A29E11300519AD7 /* Info.plist */,
+				47A699EC2A2DC08C00BD0617 /* Models */,
+				47A699ED2A2DC09400BD0617 /* Views */,
+				47A699EE2A2DC09B00BD0617 /* Controllers */,
+				47A699F12A2DC14A00BD0617 /* Configuration */,
+				47A699EF2A2DC12D00BD0617 /* Extensions */,
+				47A699F02A2DC13900BD0617 /* Localization */,
 				47DAC8212A28879E00519AD7 /* SwiftUIUltimatePortfolioApp.swift */,
-				47DAC83A2A29E3B600519AD7 /* Filter.swift */,
-				47DAC8232A28879E00519AD7 /* ContentView.swift */,
-				47A699E22A2D9C4800BD0617 /* ContentViewToolbarView.swift */,
-				47DAC8442A2A1CCF00519AD7 /* IssueRow.swift */,
-				47DAC8362A29E26100519AD7 /* SidebarView.swift */,
-				47A699E82A2D9F7600BD0617 /* UserFilterRow.swift */,
-				47A699E62A2D9EFD00BD0617 /* SmartFilterRow.swift */,
-				47A699DE2A2D97D600BD0617 /* SidebarViewToolbarView.swift */,
-				47AD25832A2B1D53005AE6A1 /* Bundle-Decodable.swift */,
-				47DAC83C2A29F3F900519AD7 /* Issue-CoreDataHelpers.swift */,
-				47DAC83E2A29F7EC00519AD7 /* Tag-CoreDataHelpers.swift */,
-				47DAC8382A29E26F00519AD7 /* DetailView.swift */,
-				47DAC8302A2888E100519AD7 /* Main.xcdatamodeld */,
-				47DAC8332A288DAD00519AD7 /* DataController.swift */,
-				47DAC8462A2A2F2900519AD7 /* IssueView.swift */,
-				47A699E42A2D9DFE00BD0617 /* TagsMenuView.swift */,
-				47A699E02A2D99CC00BD0617 /* IssueViewToolbar.swift */,
-				47DAC8482A2A2F3C00519AD7 /* NoIssueView.swift */,
 				47DAC8252A2887A400519AD7 /* Assets.xcassets */,
 				47AD25852A2B227A005AE6A1 /* Colors.xcassets */,
-				47AD25892A2B2333005AE6A1 /* Award.swift */,
-				47AD258B2A2B23ED005AE6A1 /* AwardsView.swift */,
-				47A699DC2A2D8AD200BD0617 /* Awards.json */,
-				47A699D42A2D89A300BD0617 /* Localizable.strings */,
-				47A699D82A2D8A1600BD0617 /* Localizable.stringsdict */,
-				47DAC8272A2887A400519AD7 /* SwiftUIUltimatePortfolio.entitlements */,
 				47DAC8282A2887A400519AD7 /* Preview Content */,
 			);
 			path = SwiftUIUltimatePortfolio;
@@ -412,7 +460,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = SwiftUIUltimatePortfolio/SwiftUIUltimatePortfolio.entitlements;
+				CODE_SIGN_ENTITLEMENTS = SwiftUIUltimatePortfolio/Configuration/SwiftUIUltimatePortfolio.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIUltimatePortfolio/Preview Content\"";
@@ -420,7 +468,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SwiftUIUltimatePortfolio/Info.plist;
+				INFOPLIST_FILE = SwiftUIUltimatePortfolio/Configuration/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -451,7 +499,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = SwiftUIUltimatePortfolio/SwiftUIUltimatePortfolio.entitlements;
+				CODE_SIGN_ENTITLEMENTS = SwiftUIUltimatePortfolio/Configuration/SwiftUIUltimatePortfolio.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIUltimatePortfolio/Preview Content\"";
@@ -459,7 +507,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SwiftUIUltimatePortfolio/Info.plist;
+				INFOPLIST_FILE = SwiftUIUltimatePortfolio/Configuration/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
